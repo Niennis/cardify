@@ -3,22 +3,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <title>Cardify</title>
 </head>
 <body>
   <section>
     <div class="container">
-      <img src="assets/img/apple02.jpg" alt="manzana">
-      <img src="assets/img/bear.jpg" alt="oso">
-      <img src="assets/img/cactus.jpeg" alt="cactus">
-      <img src="assets/img/doll.jpg" alt="doll">
-      <img src="assets/img/ewok.jpg" alt="ewok">
-      <img src="assets/img/jellyfish.jpg" alt="jellyfish">
-      <img src="assets/img/mushroom.jpg" alt="mushroom">
-      <img src="assets/img/snail.jpg" alt="snail">
-      <img src="assets/img/totoro.jpg" alt="totoro">
-      <img src="assets/img/yoda.jpg" alt="yoda">     
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img src="assets/img/apple02.jpg" alt="manzana" class="img-responsive">
+          <img src="assets/img/bear.jpg" alt="oso" class="img-responsive">
+          <img src="assets/img/cactus.jpeg" alt="cactus" class="img-responsive">
+          <img src="assets/img/doll.jpg" alt="doll" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img src="assets/img/ewok.jpg" alt="ewok" class="img-responsive">
+          <img src="assets/img/jellyfish.jpg" alt="jellyfish" class="img-responsive">
+          <img src="assets/img/mushroom.jpg" alt="mushroom" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img src="assets/img/snail.jpg" alt="snail" class="img-responsive">
+          <img src="assets/img/totoro.jpg" alt="totoro" class="img-responsive">
+          <img src="assets/img/yoda.jpg" alt="yoda" class="img-responsive">
+        </div>
+      </div>
     </div>
   </section>
   <script
@@ -26,10 +35,11 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="assets/js/test.js"></script>
   <script src="assets/js/index.js"></script>
   <script>
-    $('.container').cardify({});
-  </script>     
+    $('body').cardify({});
+  </script> 
 </body>
 </html>

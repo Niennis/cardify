@@ -10,7 +10,7 @@
           $(el).after('<figcaption class="text text-center">' + text + '</figcaption>');
         });
         console.log(this);
-        $(this).find('figure').css({'width': '33%', 'display': 'inline-block'});
+        $(this).find('figure').css({'width': '100%', 'display': 'inline-block'});
         $('.text').hide();
         $(this).find('figure').mouseover(function() {
           $(this).find('.text').show();
