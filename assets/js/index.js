@@ -24,12 +24,12 @@
           $(this).find('img').css({'filter': 'brightness(30%)', 
             '-webkit-filter': 'brightness(30%)'});
           $(this).parent().css({'position': 'relative',
-            'z-index': '1',
+            'z-index': '1', 
             '-webkit-transform': 'scale(1.2)',
             '-moz-transform': 'scale(1.2)',
             '-ms-transform': 'scale(1.2)',
             '-o-transform': 'scale(1.2)',
-            'transform': 'scale(1.2)'});
+            'transform': 'scale(1.2)'})
         });
         $(this).find('figure').mouseleave(function(event) {
           $(this).find('.text').hide();
@@ -39,7 +39,7 @@
             '-moz-transform': 'scale(1.0)',
             '-ms-transform': 'scale(1.0)',
             '-o-transform': 'scale(1.0)',
-            'transform': 'scale(1.0)'});
+            'transform': 'cale(1.0)'});
           $(this).find('figure').css({'display': 'none', 
             'background-color': 'transparent'});
           $(this).find('img').css({'filter': 'brightness(100%)', 
