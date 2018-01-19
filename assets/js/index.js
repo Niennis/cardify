@@ -39,7 +39,7 @@
             '-moz-transform': 'scale(1.0)',
             '-ms-transform': 'scale(1.0)',
             '-o-transform': 'scale(1.0)',
-            'transform': 'cale(1.0)'});
+            'transform': 'scale(1.0)'});
           $(this).find('figure').css({'display': 'none', 
             'background-color': 'transparent'});
           $(this).find('img').css({'filter': 'brightness(100%)', 
