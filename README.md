@@ -1,54 +1,52 @@
-# Cardify
+# CARDIFY
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
 
-***
+Cardify es una librería que nos permite mejorar la visualización de imágenes, destacándolas y enseñando información acerda de ellas.
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+## Proyecto
+
+Implementar un plugin que rescate las imágenes presentes en un contenedor, y reemplazarlas por un nuevo elemento que contenga la imagen, imagen a la cual se le aplicará un filtro, bajando su brillo, además de mostrar la descripción presente en uno de los atributos de la imagen (atributo `alt`).
+
+## Metodología de trabajo
+
+- Slack, para mantener la comunicación en el trabajo remoto.
+
+- Metodología Agile, para hacer más eficiente el desarrollo del trabajo.
 
 ## Flujo de trabajo
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+1. Realizamos **fork** a repositorio de Laboratoria.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+2. **Clonamos** el fork en nuestra máquina. 
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+3. Configuramos nuestro ambiente de desarrollo.
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+4. Preparamos nuestro producto.
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
+5. Al terminar, enviamos un **pull request** a la rama de Laboratoria.
 
-***
 
 ## Instalación
 
 ### Global (navegador)
 
+- En nuestro html debemos incorporar los siguientes códigos:
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="path-to-cardify.js"></script>
+<script>$(container).cardify({});</script>
 ```
 
 ## Uso
 
+- En nuestro archivo js correctamente enlazado a nuestro html, debemos incluir el siguiente código.
+
+- Tener en cuenta que solo las imágenes en `container` serán modificadas. 
+
 ```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
 $(container).cardify({});
 ```
 
 ## Ejemplos
 
-...
+¿Link a gh-pages con ejemplo?
