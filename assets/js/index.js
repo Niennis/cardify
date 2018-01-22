@@ -13,7 +13,7 @@
           'display': 'inline-block', 
           'color': 'white'});
         $('.text').hide();
-        $(this).find('figure').mouseover(function() {
+        $(this).find('figure').mouseover(function() { 
           $(this).find('.text').show();
           $(this).find('.text').css({'position': 'absolute',
             'top': '50%',
