@@ -29,7 +29,7 @@
             '-moz-transform': 'scale(1.2)',
             '-ms-transform': 'scale(1.2)',
             '-o-transform': 'scale(1.2)',
-            'transform': 'scale(1.2)'})
+            'transform': 'scale(1.2)'});
         });
         $(this).find('figure').mouseleave(function(event) {
           $(this).find('.text').hide();
