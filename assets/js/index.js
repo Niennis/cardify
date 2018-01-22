@@ -20,7 +20,9 @@
             'left': '50%',
             'transform': 'translateX(-50%) translateY(-50%)',
             'margin': '0',
-            'text-align': 'center'});
+            'text-align': 'center',
+            'font-weight': 'bold',
+            'font-size': '2em'});
           $(this).find('img').css({'filter': 'brightness(30%)', 
             '-webkit-filter': 'brightness(30%)'});
           $(this).parent().css({'position': 'relative',
