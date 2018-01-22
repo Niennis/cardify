@@ -24,7 +24,14 @@
             'font-weight': 'bold',
             'font-size': '2em'});
           $(this).find('img').css({'filter': 'brightness(30%)', 
-            '-webkit-filter': 'brightness(30%)'});
+            '-webkit-filter': 'brightness(30%)',
+            '-moz-filter': 'brightness(30%)', 
+            '-o-filter': 'brightness(30%)',
+            '-ms-filter': 'brightness(30%)',
+            'filter': 'grayscale(30%)',
+            'filter': 'url(grayscale.svg)', // Firefox 4+ 
+            'filter': 'gray' // IE 6-9
+          });
           $(this).parent().css({'position': 'relative',
             'z-index': '1', 
             '-webkit-transform': 'scale(1.2)',
