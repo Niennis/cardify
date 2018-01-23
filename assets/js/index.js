@@ -1,3 +1,5 @@
+var $ = require('jQuery');
+
 (function() {  
   $.fn.extend({
     cardify: function() {
@@ -19,7 +21,7 @@
         // Al pasar por la imagen cambia
         $(this).find('figure').mouseover(function() { 
           $(this).find('.text').show();
-          
+
           $(this).find('.text').css({'position': 'absolute',
             'top': '50%',
             'left': '50%',
@@ -65,4 +67,37 @@
       });
     }
   });
-})(jQuery);
+})($);
+
+/*const vocals = ['a', 'e', 'i', 'o', 'u'];
+module.exports = {
+  isVowel: function (charToTest) {
+    return vocals.indexOf(charToTest) >= 0;
+  },
+};*/
+
+const isVowel = function (char) {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (let i = 0; i < vowels.length; i++) {
+    if (char === vowels[i]) {
+      return true;
+    }
+  }
+
+  return false;
+};
+
+/*const makeVowelsUpperCase = function (string) {
+  let result = '';
+
+  for (let i = 0; i < string.length; i++) {
+    if (isVowel(string[i])) {
+      result += string[i].toUpperCase();
+    } else {
+      result += string[i];
+    }
+  }
+
+  return result;
+};*/
