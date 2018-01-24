@@ -17,14 +17,14 @@ var $ = global.jQuery = require('jquery')(window);
 // console.log(dom.window.document.querySelector("body").textContent);
 
 const app = require('../assets/js/index');
-app.createFigureInImg($('body'));
+// createFigureInImg($(body));
 
 
 describe('isVowel()', () => {
 
-  it('works', function() {
-    document.body.innerHTML = '<div>hola</div>';
-    expect($('div').html()).eql('hola');
+  it('works', function () {
+    document.body.innerHTML = '<div>hola</div>'
+    expect($("div").html()).eql('hola')
   });
 
   it('debería devolver true para letra a', () => {

@@ -84,12 +84,14 @@ function getOutImg() {
     '-webkit-filter': 'brightness(100%)'});
 }
 
-// const vocals = ['a', 'e', 'i', 'o', 'u'];
+/*const vocals = ['a', 'e', 'i', 'o', 'u'];
 module.exports = {
-  createFigureInImg: createFigureInImg,
-};
+  isVowel: function (charToTest) {
+    return vocals.indexOf(charToTest) >= 0;
+  },
+};*/
 
-/*const isVowel = function (char) {
+const isVowel = function (char) {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
 
   for (let i = 0; i < vowels.length; i++) {
@@ -99,7 +101,7 @@ module.exports = {
   }
 
   return false;
-};*/
+};
 
 /*const makeVowelsUpperCase = function (string) {
   let result = '';
