@@ -39,6 +39,7 @@ function hideFigcaption(element) {
 
 // Al pasar por la imagen cambia
 function getInImg() {
+  console.log(this)
   $(this).find('.text').show();
 
   $(this).find('.text').css({'position': 'absolute',

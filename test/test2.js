@@ -1,5 +1,5 @@
 
-describe('pruebas()', () => {
+describe('createFigureInImg()', () => {
   var contenedor = 'body';
   createFigureInImg(contenedor);
   it('debería agregar un figure por cada img', () => {
@@ -17,14 +17,19 @@ describe('pruebas()', () => {
     });
     assert.equal(countImg, count);
   });
-  it('Deberia lanzar excepción con dos chars', () => {
-    assert.equal(isVowel('ab'), false);
+  it('Deberia tener un hermano llamado figcaption', () => {
+    var countImg = $(contenedor).find('img').length;
+    var countBrother = $('body').find('img').next().length; 
+    assert.equal(countImg, countBrother);
   });
+});
+
+/*describe('getInImg()', () => {
+  getInImg($('body').find('figure'));
   it('debería activar nuevo css al pasar por img', () => {
     assert.equal(isVowel('b'), false);
   });
   it('Deberia lanzar excepción con dos chars', () => {
     assert.equal(isVowel('ab'), false);
   });
-});
-  getInImg($('body').find('figure'));
+});*/
