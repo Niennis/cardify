@@ -17,35 +17,7 @@
           'color': 'white'});
 
         // Al pasar por la imagen cambia
-        $(this).find('figure').mouseover(function() { 
-          $(this).find('.text').show();
-          
-          $(this).find('.text').css({'position': 'absolute',
-            'top': '50%',
-            'left': '50%',
-            'transform': 'translateX(-50%) translateY(-50%)',
-            'margin': '0',
-            'text-align': 'center',
-            'font-weight': 'bold',
-            'font-size': '2em'});
-          $(this).find('img').css({'filter': 'brightness(30%)', 
-            '-webkit-filter': 'brightness(30%)',
-            '-moz-filter': 'brightness(30%)', 
-            '-o-filter': 'brightness(30%)',
-            '-ms-filter': 'brightness(30%)',
-            'filter': 'grayscale(30%)',
-            'filter': 'url(grayscale.svg)', // Firefox 4+ 
-            'filter': 'gray' // IE 6-9
-          });
-          $(this).parent().css({'position': 'relative',
-            'z-index': '1', 
-            '-webkit-transform': 'scale(1.2)',
-            '-moz-transform': 'scale(1.2)',
-            '-ms-transform': 'scale(1.2)',
-            '-o-transform': 'scale(1.2)',
-            'transform': 'scale(1.2)'});
-        });
-
+        $(this).find('figure').mouseover(bigImg); 
         // Al salir de la imagen cambia
         $(this).find('figure').mouseleave(function(event) {
           $(this).find('.text').hide();
@@ -66,3 +38,32 @@
     }
   });
 })(jQuery);
+
+function bigImg() { 
+  $(this).find('.text').show();
+  
+  $(this).find('.text').css({'position': 'absolute',
+    'top': '50%',
+    'left': '50%',
+    'transform': 'translateX(-50%) translateY(-50%)',
+    'margin': '0',
+    'text-align': 'center',
+    'font-weight': 'bold',
+    'font-size': '2em'});
+  $(this).find('img').css({'filter': 'brightness(30%)', 
+    '-webkit-filter': 'brightness(30%)',
+    '-moz-filter': 'brightness(30%)', 
+    '-o-filter': 'brightness(30%)',
+    '-ms-filter': 'brightness(30%)',
+    'filter': 'grayscale(30%)',
+    'filter': 'url(grayscale.svg)', // Firefox 4+ 
+    'filter': 'gray' // IE 6-9
+  });
+  $(this).parent().css({'position': 'relative',
+    'z-index': '1', 
+    '-webkit-transform': 'scale(1.2)',
+    '-moz-transform': 'scale(1.2)',
+    '-ms-transform': 'scale(1.2)',
+    '-o-transform': 'scale(1.2)',
+    'transform': 'scale(1.2)'});
+};
