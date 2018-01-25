@@ -26,16 +26,24 @@ describe('createFigureInImg()', () => {
 
 describe('hideFigcaption()', () => {
   var contenedor = 'body';
+  hideFigcaption(contenedor);
+  
   it('Debería esconder figcaption', () => {
     var figCaption = $(contenedor).find('figcaption');
     var count = 0;
-    if (figCaption.each().css('display') == 'none') {
-      count++;
-    }
+    figCaption.each(function(i, el) {
+      console.log($(el).css('display'));
+      if ($(el).css('display') == 'none') {
+        count++;
+      }
+    });
+    // if (.css('display') == 'none') {
+    //   count++;
+    // }
+    console.log(count, figCaption.length);
     assert.equal(count, figCaption.length);
   });
 });
-  
 
 /* describe('getInImg()', () => {
   getInImg($('body').find('figure'));
