@@ -1,5 +1,16 @@
+describe('validar si img y attr existen', () => {
+  it('la img existe', () => {
+    expect($('img')).to.exist;
+  });
+  it('la imagen tiene el atributo src', () => {
+    expect($('img')).have.attr('src');
+  });
+  it('la imagen tiene un atributo alt', () => {
+    expect($('img')).have.attr('alt');
+  });
+});
 
-describe('createFigureInImg()', () => {
+describe('prueba para funcion createFigureInImg()', () => {
   var contenedor = 'body';
   createFigureInImg(contenedor);
   it('debería agregar un figure por cada img', () => {
@@ -24,7 +35,7 @@ describe('createFigureInImg()', () => {
   });
 });
 
-describe('hideFigcaption()', () => {
+describe('prueba para funcion hideFigcaption()', () => {
   var contenedor = 'body';
   hideFigcaption(contenedor);
   
@@ -37,20 +48,7 @@ describe('hideFigcaption()', () => {
         count++;
       }
     });
-    // if (.css('display') == 'none') {
-    //   count++;
-    // }
-    console.log(count, figCaption.length);
     assert.equal(count, figCaption.length);
   });
 });
 
-/* describe('getInImg()', () => {
-  getInImg($('body').find('figure'));
-  it('debería activar nuevo css al pasar por img', () => {
-    assert.equal(isVowel('b'), false);
-  });
-  it('Deberia lanzar excepción con dos chars', () => {
-    assert.equal(isVowel('ab'), false);
-  });
-});*/
