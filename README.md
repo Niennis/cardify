@@ -17,7 +17,7 @@ Cardify es una librería que nos permite mejorar la visualización de imágenes,
 
 ## Proyecto
 
-Implementar un plugin que rescate las imágenes presentes en un contenedor, y reemplazarlas por un nuevo elemento que contenga la imagen, imagen a la cual se le aplicará un filtro, bajando su brillo, además de mostrar la descripción presente en uno de los atributos de la imagen (atributo `alt`).
+Implementar un plugin que rescate las imágenes presentes en un contenedor, y reemplazarlas por un nuevo elemento que contenga la imagen, a la cual se le aplicará un filtro, bajando su brillo, además de mostrar la descripción presente en uno de los atributos de la imagen (atributo `alt`).
 
 ## Instalación
 
@@ -38,9 +38,9 @@ Para poder usar nuestra librería, debes seguir los siguientes pasos:
   
 ```
 
-- Agregas la siguiente línea bajo ```main.js```, y especificas clase(s), id(s), o elemento(s) a afectar.
+- Agregas la siguiente línea bajo ```main.js```, y especificas clase(s), id(s), o elemento(s) del contenedor con las imágenes a afectar. Las imágenes deben estar contenidas en una col, por lo que se recomienda el uso de grids, o un framework.
 
-```js
+```
 $('.class').cardify({});
 ```
 
