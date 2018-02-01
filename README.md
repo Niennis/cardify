@@ -1,5 +1,7 @@
 # CARDIFY
 
+## Dependencias y herramientas
+
 ![Github](https://img.shields.io/badge/github-inc-008080.svg?colorA=008080)
 ![Javascript](https://img.shields.io/badge/javascript-ecma-green.svg)
 ![jQuery](https://img.shields.io/badge/jquery-v3.3.1-yellowgreen.svg)
@@ -11,7 +13,6 @@
 ![Colaboradores](https://img.shields.io/badge/contributors-2-380B61.svg)
 
 
-
 Cardify es una librería que nos permite mejorar la visualización de imágenes, destacándolas y enseñando información acerda de ellas.
 
 ## Proyecto
@@ -20,23 +21,27 @@ Implementar un plugin que rescate las imágenes presentes en un contenedor, y re
 
 ## Instalación
 
-### Global (navegador)
 
-- En nuestro html debemos incorporar los siguientes códigos:
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
-<script>$(container).cardify({});</script>
+Para poder usar nuestra librería, debes seguir los siguientes pasos:
+
+- Instalar jQuery. Solo necesitas agregar la línea siguiente a tu código.
+
+``` 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 ```
 
-## Uso
+- Enlazas entonces el archivo ```main.js```.
 
-- En nuestro archivo js correctamente enlazado a nuestro html, debemos incluir el siguiente código.
+```
+  <script src="./main.js"></script>
+  
+```
 
-- Tener en cuenta que solo las imágenes en `container` serán modificadas. 
+- Agregas la siguiente línea bajo ```main.js```, y especificas clase(s), id(s), o elemento(s) a afectar.
 
 ```js
-$(container).cardify({});
+$('.class').cardify({});
 ```
 
 ## Ejemplos
