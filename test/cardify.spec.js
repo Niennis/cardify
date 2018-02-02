@@ -3,10 +3,10 @@ describe('validar si img y attr existen', () => {
     expect($('img')).to.exist;
   });
   it('la imagen tiene el atributo src', () => {
-    expect($('img')).have.attr('src');
+    expect($('img').attr('src')).to.exist;
   });
   it('la imagen tiene un atributo alt', () => {
-    expect($('img')).have.attr('alt');
+    expect($('img').attr('alt')).to.exist;
   });
 });
 
