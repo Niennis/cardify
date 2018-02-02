@@ -28,15 +28,20 @@ Para poder usar nuestra librería, debes seguir los siguientes pasos:
 
 ``` 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 ```
 
 - Enlazas entonces el archivo ```main.js```.
 
 ```
-  <script src="./main.js"></script>
-  
+  <script src="./main.js"></script>  
 ```
+
+- También tenemos disponible nuestra versión CDN
+
+```
+<script src="https://rawgit.com/Niennis/cardify/Cardify/lib/main.js"></script>
+```
+
 
 - Agregas la siguiente línea bajo ```main.js```, y especificas clase(s), id(s), o elemento(s) del contenedor con las imágenes a afectar. Las imágenes deben estar contenidas en una col, por lo que se recomienda el uso de grids, o un framework.
 
