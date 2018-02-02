@@ -23,7 +23,7 @@ function createFigureInImg(element) {
 //  $(element).find('img').css({'width': '100%'});
   $(element).find('img').wrap('<figure></figure>');
   $(element).find('img').each(function(index, el) {
-    var text = $(el).attr('alt');
+    let text = $(el).attr('alt');
     $(el).after('<figcaption class="text text-center">' + text + '</figcaption>');
   });
 }

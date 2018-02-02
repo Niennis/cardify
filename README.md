@@ -3,7 +3,7 @@
 ## Dependencias y herramientas
 
 ![Github](https://img.shields.io/badge/github-inc-008080.svg?colorA=008080)
-![Javascript](https://img.shields.io/badge/javascript-ecma-green.svg)
+![Javascript](https://img.shields.io/badge/javascript-ecma6-green.svg)
 ![jQuery](https://img.shields.io/badge/jquery-v3.3.1-yellowgreen.svg)
 ![npm](https://img.shields.io/badge/npm-v5.5.1-yellow.svg)
 ![NodeJS](https://img.shields.io/badge/nodejs-v8.9.0-orange.svg)
